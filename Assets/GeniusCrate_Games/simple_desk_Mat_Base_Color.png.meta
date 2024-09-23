@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials/Furniture/Source/Textures/2SeatD_BaseColor.tga.meta
+<<<<<<< HEAD
+guid: dcb14efa16bb8c64289c66dfa980b496
+=======
+guid: ec322fd5963e8974fbc52de2bb31d3d5
+>>>>>>> 29fd6cabeb8d187ddb33f669937b2069b07ff4b7
+========
 guid: 0a25dd85a700ee64a892cea1ef495d2f
+>>>>>>>> 7b134756ea8785c6d2bea10c6b8f4d083e1a295a:Assets/GeniusCrate_Games/simple_desk_Mat_Base_Color.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

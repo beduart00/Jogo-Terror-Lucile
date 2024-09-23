@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Materials/Furniture/Prefabs/fancy_picture_frame_02_diff_4k.jpg.meta
+<<<<<<< HEAD
+guid: 38aea3a4f159b444e8eceffcc5830258
+=======
+guid: 37b9ba5520d0c42ac96e60d4b38b3c9d
+>>>>>>> 29fd6cabeb8d187ddb33f669937b2069b07ff4b7
+========
+guid: a92e5e88343b54b4f890d582d9b284a8
+>>>>>>>> 7b134756ea8785c6d2bea10c6b8f4d083e1a295a:Assets/GeniusCrate_Games/lambert2_Metallic.png.meta
+=======
 guid: 11e43e9248b03a24e826f9371cc162b5
+>>>>>>> 7b134756ea8785c6d2bea10c6b8f4d083e1a295a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
