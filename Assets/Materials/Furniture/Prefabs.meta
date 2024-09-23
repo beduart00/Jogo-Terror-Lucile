@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Materials/Furniture/Prefabs.meta
 guid: 45c2a299a6f4ee04c8387fa92bd7540a
+========
+guid: a2fb6dd7f8b3249b5a206a05e70f280c
+>>>>>>>> 7b134756ea8785c6d2bea10c6b8f4d083e1a295a:Assets/GeniusCrate_Games.meta
+=======
+guid: ce895b602f1dd3c4ab9b968a9eb8da43
+>>>>>>> 7b134756ea8785c6d2bea10c6b8f4d083e1a295a
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
