@@ -134,17 +134,10 @@
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-<<<<<<< HEAD
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.androidjni": "1.0.0",
-        "com.unity.services.core": "1.8.2"
-=======
         "com.unity.services.core": "1.8.2",
         "com.unity.modules.androidjni": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0"
->>>>>>> 29fd6cabeb8d187ddb33f669937b2069b07ff4b7
       },
       "url": "https://packages.unity.com"
     },
@@ -154,22 +147,13 @@
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-<<<<<<< HEAD
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.services.core": "1.10.1"
-=======
         "com.unity.services.core": "1.10.1",
         "com.unity.modules.jsonserialize": "1.0.0"
->>>>>>> 29fd6cabeb8d187ddb33f669937b2069b07ff4b7
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-<<<<<<< HEAD
-      "version": "1.12.2",
-=======
       "version": "1.12.5",
->>>>>>> 29fd6cabeb8d187ddb33f669937b2069b07ff4b7
       "depth": 1,
       "source": "registry",
       "dependencies": {
