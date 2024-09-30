@@ -151,6 +151,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2538be7f3df0247599c1e0873dba8ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionImage: {fileID: 784169675}
+  responseTime: 2
+  actionSprites:
+  - {fileID: 21300000, guid: 5a55f713424a347408396ffa33c2f434, type: 3}
+  - {fileID: 21300000, guid: 47399cfb66b7842b9acc5ad27be74337, type: 3}
+  - {fileID: 21300000, guid: 4e42c8c50148648d4be2777bbe49f8c7, type: 3}
+  - {fileID: 21300000, guid: 39e8c1c23ccea44aaaf2863e466ad206, type: 3}
+  - {fileID: 21300000, guid: 699558de40a664f36a843b3447efdde2, type: 3}
 --- !u!4 &389306886
 Transform:
   m_ObjectHideFlags: 0
@@ -272,7 +280,7 @@ GameObject:
   - component: {fileID: 784169676}
   - component: {fileID: 784169675}
   m_Layer: 5
-  m_Name: Btn
+  m_Name: ImagemRef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +512,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
