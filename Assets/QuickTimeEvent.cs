@@ -15,10 +15,10 @@ public class QuickTimeEvent : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(QTESequence());
+       // StartCoroutine(QTESequence()); 
     }
 
-    IEnumerator QTESequence()
+    public IEnumerator QTESequence()
     {
         while (gameActive && correctCount < totalActions)
         {
