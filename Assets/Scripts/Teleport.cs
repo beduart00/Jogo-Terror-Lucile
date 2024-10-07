@@ -13,6 +13,9 @@ private bool estaColidindo;
 
 public GameObject btnFeedback;
 
+public Animator Fade;
+public bool teleporting;
+
 void Start(){
 //spawnPoint = GameObject.Find("Player").GetComponent<Transform>();
 
@@ -20,9 +23,11 @@ void Start(){
 
  private void OnTriggerEnter(Collider other)
  {   
-   if(other.CompareTag("Player")){
+   if(other.tag=="Player"){
 
 estaColidindo=true;
+btnFeedback.SetActive(true);
+Debug.Log("Entrou");
 
    
 
@@ -32,24 +37,50 @@ estaColidindo=true;
 
  private void OnTriggerExit(Collider other)
  {   
-   if(other.CompareTag("Player")){
+  if(other.tag=="Player"){
 
 estaColidindo=false;
-btnFeedback.SetActive(true);
+btnFeedback.SetActive(false);
+Debug.Log("Saiu");
    
 
    }
     
  }
 
+IEnumerator teleportingAction(){
+
+teleporting=true;
+
+Fade.Play("FadeIn");
+player.GetComponent<FPSController>().enabled=false;
+
+ btnFeedback.SetActive(false);
+
+yield return new WaitForSeconds(2f);
+
+ player.position = spawnPoint.position;
+teleporting=false;
+Fade.Play("FadeOut");
+player.GetComponent<FPSController>().enabled=true;
+}
+
+
 void Update(){
 
-if(Input.GetKey(KeyCode.Space)){}
+  //Debug.Log(estaColidindo);
 
-if(estaColidindo==true){
+if(Input.GetKey(KeyCode.Space)){
 
-player.position = spawnPoint.position;
-btnFeedback.SetActive(false);
+if(estaColidindo==true&&teleporting==false){
+
+StartCoroutine(teleportingAction());
+}
+
+// Debug.Log("Teleportei");
+
+// player.position = spawnPoint.position;
+// btnFeedback.SetActive(false);
 
 }
 
