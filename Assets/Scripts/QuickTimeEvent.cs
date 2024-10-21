@@ -15,7 +15,7 @@ public class QuickTimeEvent : MonoBehaviour
 
     void Start()
     {
-       StartCoroutine(QTESequence()); 
+    //   StartCoroutine(QTESequence()); 
     }
 
     public IEnumerator QTESequence()
@@ -44,6 +44,10 @@ public class QuickTimeEvent : MonoBehaviour
             // Se o timer chegar a zero, o jogador perdeu
             if (timer <= 0)
             {
+
+                //voltar para o quarto
+                //ativar o box collider do trigger2(privada)novamente
+                //ativar o jogador poder andar
                 gameActive = false;
                 Debug.Log("Você perdeu! Tempo esgotado!");
                 actionImage.gameObject.SetActive(false);
@@ -53,6 +57,10 @@ public class QuickTimeEvent : MonoBehaviour
         // Verifica se o jogador venceu
         if (correctCount >= totalActions)
         {
+
+            //ativar o jogador poder andar
+            //statenarrativa = 2
+            //some feitos etc
             Debug.Log("Você venceu!");
             actionImage.gameObject.SetActive(false);
         }
