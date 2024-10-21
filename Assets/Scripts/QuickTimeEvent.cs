@@ -15,7 +15,7 @@ public class QuickTimeEvent : MonoBehaviour
 
     void Start()
     {
-       // StartCoroutine(QTESequence()); 
+       StartCoroutine(QTESequence()); 
     }
 
     public IEnumerator QTESequence()
