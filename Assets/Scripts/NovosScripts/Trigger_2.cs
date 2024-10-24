@@ -30,8 +30,6 @@ public IEnumerator ativaProximopasso(){
 // pausa o player
      meujogador.GetComponent<FPSController>().enabled=false;
 
-
-
 // animacoes em looping
 
 
@@ -41,6 +39,16 @@ public IEnumerator ativaProximopasso(){
 
 //roda a funcao de quick time
     StartCoroutine(GameObject.Find("QuickTimeEvent_1").GetComponent<QuickTimeEvent>().QTESequence());
+
+     if (timer <= 0)
+            {
+
+                //voltar para o quarto
+                //ativar o box collider do trigger2(privada)novamente
+                //ativar o jogador poder andar
+                gameaction = false;
+                Debug.Log("Você perdeu! Tempo esgotado!");
+                actionImage.gameObject.SetActive(false);
 
 // despausa o player
    

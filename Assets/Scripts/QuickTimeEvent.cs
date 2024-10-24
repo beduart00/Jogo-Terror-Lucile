@@ -59,8 +59,6 @@ public class QuickTimeEvent : MonoBehaviour
         {
 
             //ativar o jogador poder andar
-            //statenarrativa = 2
-            //some feitos etc
             Debug.Log("Você venceu!");
             actionImage.gameObject.SetActive(false);
         }
