@@ -976,6 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e1a3c75550132c4e83a13d48e07bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meujogador: {fileID: 1402175243}
 --- !u!1 &284854543
 GameObject:
   m_ObjectHideFlags: 0
@@ -9778,6 +9779,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1402175243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5299722049433171466, guid: e57c3760ae8d5b44190b23d2f2792008, type: 3}
+  m_PrefabInstance: {fileID: 962910931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1422742929
 GameObject:
   m_ObjectHideFlags: 0
@@ -13651,7 +13657,7 @@ GameObject:
   - component: {fileID: 1942617927}
   - component: {fileID: 1942617926}
   m_Layer: 0
-  m_Name: QuickTimeEventManager
+  m_Name: QuickTimeEvent_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
