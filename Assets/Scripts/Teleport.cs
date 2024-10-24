@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+
 using UnityEngine;
+
+using UnityEngine.UI;
 
 public class Teleport : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public bool teleporting;
 void Start(){
 //spawnPoint = GameObject.Find("Player").GetComponent<Transform>();
 
+player = GameObject.Find("Player").GetComponent<Transform>();
+btnFeedback= GameObject.Find("feedback");
+Fade= GameObject.Find("Fade").GetComponent<Animator>();
+
 }
 
  private void OnTriggerEnter(Collider other)
@@ -26,7 +32,8 @@ void Start(){
    if(other.tag=="Player"){
 
 estaColidindo=true;
-btnFeedback.SetActive(true);
+//btnFeedback.SetActive(true);
+btnFeedback.GetComponent<Image>().enabled=true;
 Debug.Log("Entrou");
 
    
@@ -40,7 +47,8 @@ Debug.Log("Entrou");
   if(other.tag=="Player"){
 
 estaColidindo=false;
-btnFeedback.SetActive(false);
+btnFeedback.GetComponent<Image>().enabled=false;
+//btnFeedback.SetActive(false);
 Debug.Log("Saiu");
    
 
@@ -55,7 +63,8 @@ teleporting=true;
 Fade.Play("FadeIn");
 player.GetComponent<FPSController>().enabled=false;
 
- btnFeedback.SetActive(false);
+ //btnFeedback.SetActive(false);
+ btnFeedback.GetComponent<Image>().enabled=false;
 
 yield return new WaitForSeconds(2f);
 
