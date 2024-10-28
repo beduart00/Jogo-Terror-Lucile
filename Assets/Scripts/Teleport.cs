@@ -69,8 +69,12 @@ player.GetComponent<FPSController>().enabled=false;
 yield return new WaitForSeconds(2f);
 
  player.position = spawnPoint.position;
-teleporting=false;
+
 Fade.Play("FadeOut");
+
+
+yield return new WaitForSeconds(1f);
+teleporting=false;
 player.GetComponent<FPSController>().enabled=true;
 }
 
