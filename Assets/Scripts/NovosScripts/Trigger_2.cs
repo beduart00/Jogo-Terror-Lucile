@@ -40,6 +40,7 @@ public IEnumerator ativaProximopasso(){
 //roda a funcao de quick time
     StartCoroutine(GameObject.Find("QuickTimeEvent_1").GetComponent<QuickTimeEvent>().QTESequence());
 
+/*
      if (timer <= 0)
             {
 
@@ -51,7 +52,9 @@ public IEnumerator ativaProximopasso(){
                 actionImage.gameObject.SetActive(false);
 
 // despausa o player
-   
+  
+
+  */
 
 }
 

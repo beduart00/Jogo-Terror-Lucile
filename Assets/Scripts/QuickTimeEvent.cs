@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,11 +13,35 @@ public class QuickTimeEvent : MonoBehaviour
     private int correctCount = 0;
     private int totalActions = 5; // Número de ações que o jogador precisa acertar
     private bool gameActive = true;
+private float timer;
 
-    void Start()
-    {
-    //   StartCoroutine(QTESequence()); 
-    }
+public GameObject meujogador;
+public GameObject trigger2;
+
+
+IEnumerator quickTimeAcerto(){
+
+trigger2.SetActive(false);
+    yield return new WaitForSeconds(2f);
+     meujogador.GetComponent<FPSController>().enabled=true;
+
+}
+
+IEnumerator quickTimeErrou(){
+
+trigger2.SetActive(false);
+meujogador.transform.position = new Vector3(-4.6f,1.48f,-1.39f);
+    yield return new WaitForSeconds(2f);
+      meujogador.GetComponent<FPSController>().enabled=true;
+timer=0;
+correctCount =0;
+gameActive=true;
+
+trigger2.SetActive(true);
+    
+}
+
+
 
     public IEnumerator QTESequence()
     {
@@ -51,6 +76,7 @@ public class QuickTimeEvent : MonoBehaviour
                 gameActive = false;
                 Debug.Log("Você perdeu! Tempo esgotado!");
                 actionImage.gameObject.SetActive(false);
+                 StartCoroutine(quickTimeErrou());
             }
         }
 
@@ -61,6 +87,7 @@ public class QuickTimeEvent : MonoBehaviour
             //ativar o jogador poder andar
             Debug.Log("Você venceu!");
             actionImage.gameObject.SetActive(false);
+            StartCoroutine(quickTimeAcerto());
         }
     }
 
