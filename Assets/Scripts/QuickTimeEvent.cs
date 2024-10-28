@@ -13,35 +13,36 @@ public class QuickTimeEvent : MonoBehaviour
     private int correctCount = 0;
     private int totalActions = 5; // Número de ações que o jogador precisa acertar
     private bool gameActive = true;
-private float timer;
-
-public GameObject meujogador;
-public GameObject trigger2;
+    public GameObject meujogador;
+    public GameObject trigger2;
 
 
-IEnumerator quickTimeAcerto(){
 
-trigger2.SetActive(false);
-    yield return new WaitForSeconds(2f);
-     meujogador.GetComponent<FPSController>().enabled=true;
+    IEnumerator quickTimeAcerto()
+    {
+       GameObject.Find("Gerenciador de narrativas").GetComponent<Gerenciadordenarrativa>().narrativeState=2;
+        trigger2.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        meujogador.GetComponent<FPSController>().enabled = true;
+        gameActive = false; // Para garantir que o QTE não continue
+    }
 
-}
+    IEnumerator quickTimeErrou()
+    {
+      
+        trigger2.SetActive(false);
+        meujogador.transform.position = new Vector3(-4.6f, 1.48f, -1.39f);
+        yield return new WaitForSeconds(2f);
+        meujogador.GetComponent<FPSController>().enabled = true;
+        ResetQTE();
+        trigger2.SetActive(true);
+    }
 
-IEnumerator quickTimeErrou(){
-
-trigger2.SetActive(false);
-meujogador.transform.position = new Vector3(-4.6f,1.48f,-1.39f);
-    yield return new WaitForSeconds(2f);
-      meujogador.GetComponent<FPSController>().enabled=true;
-timer=0;
-correctCount =0;
-gameActive=true;
-
-trigger2.SetActive(true);
-    
-}
-
-
+    private void ResetQTE()
+    {
+        correctCount = 0;
+        gameActive = true;
+    }
 
     public IEnumerator QTESequence()
     {
@@ -50,7 +51,6 @@ trigger2.SetActive(true);
             SortAction();
             float timer = responseTime;
 
-            // Aguarda a resposta do jogador ou o tempo limite
             while (timer > 0 && gameActive)
             {
                 timer -= Time.deltaTime;
@@ -59,76 +59,59 @@ trigger2.SetActive(true);
                 {
                     correctCount++;
                     Debug.Log("Acertou! Ações corretas: " + correctCount);
-                    actionImage.gameObject.SetActive(false); // Oculta a imagem após o acerto
+                    actionImage.gameObject.SetActive(false);
                     break; // Sai do loop, sorteia nova ação
                 }
 
                 yield return null; // Espera o próximo frame
             }
 
-            // Se o timer chegar a zero, o jogador perdeu
             if (timer <= 0)
             {
-
-                //voltar para o quarto
-                //ativar o box collider do trigger2(privada)novamente
-                //ativar o jogador poder andar
-                gameActive = false;
+                gameActive = false; // Fim do jogo
                 Debug.Log("Você perdeu! Tempo esgotado!");
                 actionImage.gameObject.SetActive(false);
-                 StartCoroutine(quickTimeErrou());
+                StartCoroutine(quickTimeErrou());
             }
         }
 
-        // Verifica se o jogador venceu
         if (correctCount >= totalActions)
         {
-
-            //ativar o jogador poder andar
             Debug.Log("Você venceu!");
             actionImage.gameObject.SetActive(false);
             StartCoroutine(quickTimeAcerto());
         }
     }
 
-    // Função para sortear uma ação
     void SortAction()
     {
         int randomIndex = Random.Range(0, actions.Length);
         currentAction = actions[randomIndex];
-        UpdateUI(randomIndex); // Atualiza a UI com a nova ação
+        UpdateUI(randomIndex);
     }
 
-    // Atualiza a UI com a ação sorteada
     void UpdateUI(int index)
     {
-        actionImage.sprite = actionSprites[index]; // Define a imagem correspondente à ação
-        actionImage.gameObject.SetActive(true); // Garante que a imagem esteja visível
+        actionImage.sprite = actionSprites[index];
+        actionImage.gameObject.SetActive(true);
     }
 
-    // Verifica se a entrada do jogador corresponde à ação sorteada
     bool InputMatchesAction()
     {
-        bool matched = false;
         switch (currentAction)
         {
             case "Espaço":
-                matched = Input.GetKeyDown(KeyCode.Space);
-                break;
+                return Input.GetKeyDown(KeyCode.Space);
             case "Seta Cima":
-                matched = Input.GetKeyDown(KeyCode.UpArrow);
-                break;
+                return Input.GetKeyDown(KeyCode.UpArrow);
             case "Seta Baixo":
-                matched = Input.GetKeyDown(KeyCode.DownArrow);
-                break;
+                return Input.GetKeyDown(KeyCode.DownArrow);
             case "Seta Esquerda":
-                matched = Input.GetKeyDown(KeyCode.LeftArrow);
-                break;
+                return Input.GetKeyDown(KeyCode.LeftArrow);
             case "Seta Direita":
-                matched = Input.GetKeyDown(KeyCode.RightArrow);
-                break;
+                return Input.GetKeyDown(KeyCode.RightArrow);
+            default:
+                return false;
         }
-
-        return matched;
     }
 }
