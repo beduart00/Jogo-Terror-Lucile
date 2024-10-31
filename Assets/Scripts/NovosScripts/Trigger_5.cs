@@ -75,6 +75,7 @@ private void OnTriggerExit(Collider other)
       
          btnFeedback.GetComponent<Image>().enabled=false;
          estaColindo = false;
+          FecharDiario();
 
         
         }
