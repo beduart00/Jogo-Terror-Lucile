@@ -3,11 +3,11 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class Trigger_4 : MonoBehaviour
+public class Trigger_5 : MonoBehaviour
 {
     public GameObject gerenciadorDeImagem; // Para gerenciar as imagens do diário
     public GameObject textoDaNarrativa; // Para exibir o texto da narrativa
-    public string meuTexto; // Texto da narrativa
+   // public string meuTexto; // Texto da narrativa
     public GameObject diarioCanvas; // Canvas que contém a imagem do diário
 
     private bool diarioAberto = false; // Para controlar o estado do diário
@@ -20,7 +20,7 @@ public class Trigger_4 : MonoBehaviour
     void Start()
     {
         // Esconder o Canvas do diário no início
-        diarioCanvas.SetActive(false);
+       // diarioCanvas.SetActive(false);
           btnFeedback= GameObject.Find("feedback");
     }
 
@@ -43,6 +43,9 @@ public class Trigger_4 : MonoBehaviour
 
     private void AbrirDiario()
     {
+
+// ativar o proximo trigger
+
       //  textoDaNarrativa.SetActive(false); // Esconder texto da narrativa
         diarioCanvas.SetActive(true); // Mostrar o Canvas do diário
         diarioAberto = true; // Atualizar estado do diário
@@ -55,11 +58,11 @@ public class Trigger_4 : MonoBehaviour
         //StartCoroutine(ativaProximopasso()); // Avançar para o próximo passo
     }
 
-    private IEnumerator ativaProximopasso()
-    {
-        yield return new WaitForSeconds(3f);
+    //private IEnumerator ativaProximopasso()
+  //  {
+    //    yield return new WaitForSeconds(3f);
         // Aqui você pode adicionar a lógica para avançar no estado da narrativa ou qualquer outra ação necessária
-    }
+    //}
 
 
 private void OnTriggerExit(Collider other)

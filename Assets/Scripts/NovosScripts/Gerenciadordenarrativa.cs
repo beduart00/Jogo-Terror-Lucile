@@ -13,6 +13,8 @@ public GameObject trigger_2; //quick time event da privada
 public GameObject trigger_3; // vo falando bosta 2 - corredor pos banheiro
 public GameObject trigger_4; // página 1 diário
 
+public GameObject trigger_5; // lucy pensando no pai
+
 
     // Update is called once per frame
     void Update()

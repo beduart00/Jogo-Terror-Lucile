@@ -16,11 +16,14 @@ public class QuickTimeEvent : MonoBehaviour
     public GameObject meujogador;
     public GameObject trigger2;
 
+    public GameObject proximoTriggerAtivado;
+
 
 
     IEnumerator quickTimeAcerto()
     {
-       GameObject.Find("Gerenciador de narrativas").GetComponent<Gerenciadordenarrativa>().narrativeState=2;
+      // GameObject.Find("Gerenciador de narrativas").GetComponent<Gerenciadordenarrativa>().narrativeState=2;
+    proximoTriggerAtivado.SetActive(true);
         trigger2.SetActive(false);
         yield return new WaitForSeconds(2f);
         meujogador.GetComponent<FPSController>().enabled = true;

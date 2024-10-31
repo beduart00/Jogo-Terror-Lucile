@@ -1,27 +1,21 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Rendering;
-using Unity.VisualScripting;
+using UnityEngine.UI;
 
-public class Trigger_1 : MonoBehaviour
+public class Trigger_4 : MonoBehaviour
 {
 
-//ativar
-//public GameObject Trigger_2;
-
-public GameObject gerenciadorDeNarrativas;
+    
+//public GameObject gerenciadorDeNarrativas;
 public GameObject textoDaNarrativa;
 public string meuTexto;
   
 //public float meuTempo;
 
-public GameObject proximoTriggerAtivado;
-
 void Start(){
 
-gerenciadorDeNarrativas = GameObject.Find("Gerenciador de narrativas");
+//gerenciadorDeNarrativas = GameObject.Find("Gerenciador de narrativas");
 
 }
 
@@ -30,8 +24,6 @@ public IEnumerator ativaProximopasso(){
 
    yield return new WaitForSeconds(3f);
  //  gerenciadorDeNarrativas.GetComponent<Gerenciadordenarrativa>().narrativeState=1;
- proximoTriggerAtivado.SetActive(true);
- 
 textoDaNarrativa.SetActive(false);
 
 

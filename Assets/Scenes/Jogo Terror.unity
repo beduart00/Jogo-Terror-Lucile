@@ -715,10 +715,10 @@ GameObject:
   - component: {fileID: 131865735}
   - component: {fileID: 131865739}
   - component: {fileID: 131865738}
-  - component: {fileID: 131865740}
   - component: {fileID: 131865741}
+  - component: {fileID: 131865742}
   m_Layer: 0
-  m_Name: Trigger 4
+  m_Name: Trigger (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -790,23 +790,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131865734}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &131865740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131865734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a971fd7f466f4e80a846478840d1a1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gerenciadorDeImagem: {fileID: 863748049}
-  textoDaNarrativa: {fileID: 1137076149}
-  meuTexto: "V\xE1 at\xE9 o di\xE1rio e aperte espa\xE7o para abri-lo"
-  diarioCanvas: {fileID: 1145836745}
-  btnFeedback: {fileID: 0}
 --- !u!135 &131865741
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -828,6 +811,22 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.49999997
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &131865742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131865734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7193cf579c8488241b011d22c8e1b769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gerenciadorDeImagem: {fileID: 863748049}
+  textoDaNarrativa: {fileID: 1137076149}
+  diarioCanvas: {fileID: 1145836745}
+  btnFeedback: {fileID: 0}
 --- !u!1 &203472500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,6 +3436,7 @@ Transform:
   - {fileID: 1962069517}
   - {fileID: 280594920}
   - {fileID: 1602064505}
+  - {fileID: 1356562444}
   - {fileID: 131865735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9935,6 +9935,127 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353541627}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1356562443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356562444}
+  - component: {fileID: 1356562448}
+  - component: {fileID: 1356562447}
+  - component: {fileID: 1356562446}
+  - component: {fileID: 1356562445}
+  m_Layer: 0
+  m_Name: Trigger (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1356562444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356562443}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -41.56, y: 0.7992318, z: 7.17}
+  m_LocalScale: {x: 1, y: 1, z: 6.546236}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 430847425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356562445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356562443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a971fd7f466f4e80a846478840d1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoDaNarrativa: {fileID: 1137076149}
+  meuTexto: "Phillip Bernadine. Ah pai... Queria ter te conhecido melhor quando estava
+    vivo. Pelo menos eu n\xE3o teria que viver com a vov\xF3"
+--- !u!65 &1356562446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356562443}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1356562447
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356562443}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: dc8bf5036355b4f189e783af80ad265d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1356562448
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356562443}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1363684267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10027,7 +10148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1372018533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10035,7 +10156,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372018532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc229b626718a47be9070e39dd2fceb5, type: 3}
   m_Name: 
@@ -10045,6 +10166,7 @@ MonoBehaviour:
   trigger_2: {fileID: 280594919}
   trigger_3: {fileID: 1602064504}
   trigger_4: {fileID: 131865734}
+  trigger_5: {fileID: 0}
 --- !u!4 &1372018534
 Transform:
   m_ObjectHideFlags: 0
@@ -12189,7 +12311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1602064505
 Transform:
   m_ObjectHideFlags: 0
@@ -12288,10 +12410,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a40dcad16366a45a848ce940ac21b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gerenciadorDeNarrativas: {fileID: 1372018532}
   textoDaNarrativa: {fileID: 1137076149}
   meuTexto: "Volte para o quarto Lucile,n\xE3o fique pelo corredor"
-  trigger_4diario: {fileID: 131865734}
+  trigger_4: {fileID: 1356562443}
+  trigger_5_diario: {fileID: 131865734}
 --- !u!1 &1620525662
 GameObject:
   m_ObjectHideFlags: 0
@@ -13984,6 +14106,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 699558de40a664f36a843b3447efdde2, type: 3}
   meujogador: {fileID: 1402175243}
   trigger2: {fileID: 280594919}
+  proximoTriggerAtivado: {fileID: 1602064504}
 --- !u!4 &1942617927
 Transform:
   m_ObjectHideFlags: 0
@@ -14120,6 +14243,7 @@ MonoBehaviour:
   gerenciadorDeNarrativas: {fileID: 0}
   textoDaNarrativa: {fileID: 1137076149}
   meuTexto: "Lucile! V\xE1 logo ao banheiro antes que eu te tranque de novo!"
+  proximoTriggerAtivado: {fileID: 280594919}
 --- !u!1 &2007734828
 GameObject:
   m_ObjectHideFlags: 0
