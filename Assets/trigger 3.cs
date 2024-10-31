@@ -14,6 +14,7 @@ public class Trigger_3 : MonoBehaviour
 public GameObject gerenciadorDeNarrativas;
 public GameObject textoDaNarrativa;
 public string meuTexto;
+public GameObject trigger_4diario;
   
 //public float meuTempo;
 
@@ -27,9 +28,9 @@ gerenciadorDeNarrativas = GameObject.Find("Gerenciador de narrativas");
 public IEnumerator ativaProximopasso(){
 
    yield return new WaitForSeconds(3f);
-   gerenciadorDeNarrativas.GetComponent<Gerenciadordenarrativa>().narrativeState=1;
+   gerenciadorDeNarrativas.GetComponent<Gerenciadordenarrativa>().narrativeState=3;
 textoDaNarrativa.SetActive(false);
-
+trigger_4diario.SetActive(true);
 
 
 }
