@@ -6,11 +6,10 @@ public class Trigger_4 : MonoBehaviour
 {
     public GameObject gerenciadorDeImagem; // Para gerenciar as imagens do diário
     public GameObject textoDaNarrativa; // Para exibir o texto da narrativa
+    public string meuTexto; // Texto da narrativa
     public GameObject diarioCanvas; // Canvas que contém a imagem do diário
 
-   
     private bool diarioAberto = false; // Para controlar o estado do diário
-    
 
     void Start()
     {
@@ -49,7 +48,7 @@ public class Trigger_4 : MonoBehaviour
     private IEnumerator ativaProximopasso()
     {
         yield return new WaitForSeconds(3f);
-        
+        // Aqui você pode adicionar a lógica para avançar no estado da narrativa ou qualquer outra ação necessária
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,6 +56,7 @@ public class Trigger_4 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameObject.GetComponent<BoxCollider>().enabled = false; // Desativa o collider para não repetir a ativação
+            textoDaNarrativa.GetComponent<TextMeshProUGUI>().text = meuTexto; // Atualiza o texto da narrativa
             textoDaNarrativa.SetActive(true); // Ativa o texto da narrativa
         }
     }
