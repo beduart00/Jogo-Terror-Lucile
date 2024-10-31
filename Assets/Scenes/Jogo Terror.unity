@@ -716,9 +716,8 @@ GameObject:
   - component: {fileID: 131865739}
   - component: {fileID: 131865738}
   - component: {fileID: 131865737}
-  - component: {fileID: 131865736}
   m_Layer: 0
-  m_Name: Triggerteste (4)
+  m_Name: Trigger 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -739,19 +738,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 430847425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &131865736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131865734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e1a3c75550132c4e83a13d48e07bf63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meujogador: {fileID: 1402175243}
 --- !u!65 &131865737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3431,8 +3417,8 @@ Transform:
   m_Children:
   - {fileID: 1962069517}
   - {fileID: 280594920}
-  - {fileID: 131865735}
   - {fileID: 1602064505}
+  - {fileID: 131865735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &440499846
@@ -9763,6 +9749,7 @@ MonoBehaviour:
   trigger_1: {fileID: 1962069516}
   trigger_2: {fileID: 280594919}
   trigger_3: {fileID: 1602064504}
+  trigger_4: {fileID: 131865734}
 --- !u!4 &1372018534
 Transform:
   m_ObjectHideFlags: 0
@@ -11906,7 +11893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1602064505
 Transform:
   m_ObjectHideFlags: 0
