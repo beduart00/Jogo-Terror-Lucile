@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+
 public class Trigger_5 : MonoBehaviour
 {
     public GameObject gerenciadorDeImagem; // Para gerenciar as imagens do diário
@@ -14,7 +15,7 @@ public class Trigger_5 : MonoBehaviour
 
     private bool estaColindo;
     public GameObject btnFeedback;
-
+    public GameObject grupodequicktimes;
     
 
     void Start()
@@ -49,6 +50,7 @@ public class Trigger_5 : MonoBehaviour
       //  textoDaNarrativa.SetActive(false); // Esconder texto da narrativa
         diarioCanvas.SetActive(true); // Mostrar o Canvas do diário
         diarioAberto = true; // Atualizar estado do diário
+        grupodequicktimes.SetActive(true);
     }
 
     private void FecharDiario()
