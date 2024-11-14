@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ff89657aee16d241949eaed6d03f6fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9bf4ea7da2fd83488da76e0c9c308f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7235,8 +7235,8 @@ Transform:
   m_GameObject: {fileID: 977864078}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.93, y: 1.6877, z: 5.56}
-  m_LocalScale: {x: 1, y: 4.3354, z: 1}
+  m_LocalPosition: {x: -18.2681, y: 1.6877, z: 5.9372}
+  m_LocalScale: {x: 1.6761, y: 4.3354, z: 1.7544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52258229}
@@ -7254,7 +7254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDaNarrativa: {fileID: 1137076149}
-  meuTexto: 1
+  meuTexto: "Hmm.. Acho que n\xE3o est\xE1 atr\xE1s deste quadro"
 --- !u!1 &991483605
 GameObject:
   m_ObjectHideFlags: 0
@@ -7439,8 +7439,8 @@ Transform:
   m_GameObject: {fileID: 994507881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.38, y: 1.6877, z: 5.84}
-  m_LocalScale: {x: 1, y: 4.3354, z: 1}
+  m_LocalPosition: {x: -41.38, y: 1.6877, z: 5.668}
+  m_LocalScale: {x: 1, y: 4.3354, z: 1.7557268}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52258229}
@@ -10036,8 +10036,8 @@ Transform:
   m_GameObject: {fileID: 1202276575}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.01, y: 1.6877, z: 9.42}
-  m_LocalScale: {x: 1, y: 4.3354, z: 1}
+  m_LocalPosition: {x: -29.2719, y: 1.6877, z: 9.0475}
+  m_LocalScale: {x: 1.5237, y: 4.3354, z: 1.8870327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52258229}
@@ -10055,7 +10055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDaNarrativa: {fileID: 1137076149}
-  meuTexto: 3
+  meuTexto: "N\xE3o, este \xE9 o quarto de Vov\xF3"
 --- !u!1 &1221513745
 GameObject:
   m_ObjectHideFlags: 0
@@ -10239,8 +10239,8 @@ Transform:
   m_GameObject: {fileID: 1230103992}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.84, y: 1.6877, z: 9.42}
-  m_LocalScale: {x: 1, y: 4.3354, z: 1}
+  m_LocalPosition: {x: -38.84, y: 1.6877, z: 9.0945}
+  m_LocalScale: {x: 1, y: 4.3354, z: 1.651}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52258229}
@@ -10258,7 +10258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDaNarrativa: {fileID: 1137076149}
-  meuTexto: 4
+  meuTexto: "Aqui n\xE3o, deve estar atr\xE1s do pr\xF3ximo quadro"
 --- !u!1 &1250899009
 GameObject:
   m_ObjectHideFlags: 0
@@ -14390,8 +14390,8 @@ Transform:
   m_GameObject: {fileID: 1762347135}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.23, y: 1.6877, z: 9.42}
-  m_LocalScale: {x: 1, y: 4.3354, z: 1}
+  m_LocalPosition: {x: -23.4742, y: 1.749, z: 9.0184}
+  m_LocalScale: {x: 1.4471116, y: 4.458092, z: 1.8032}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52258229}
@@ -14409,7 +14409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoDaNarrativa: {fileID: 1137076149}
-  meuTexto: 2
+  meuTexto: "Meu retrato de beb\xEA?"
 --- !u!4 &1771148909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4141481895225905256, guid: e57c3760ae8d5b44190b23d2f2792008, type: 3}
